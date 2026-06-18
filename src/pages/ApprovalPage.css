@@ -15,11 +15,36 @@
 }
 
 .approval-module-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 18px;
   font-weight: 700;
   color: #1a73e8;
   padding: 0 20px 20px;
   border-bottom: 1px solid #f0f0f0;
+}
+
+.approval-gear-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: #bbb;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: color 0.15s, background 0.15s;
+}
+
+.approval-gear-btn:hover {
+  color: #1a73e8;
+  background: #f0f4ff;
+}
+
+.approval-gear-btn.active {
+  color: #1a73e8;
 }
 
 .approval-draft-btn {
