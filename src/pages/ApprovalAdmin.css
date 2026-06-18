@@ -15,6 +15,41 @@
   border-bottom: 1px solid #eee;
 }
 
+.approval-admin-tabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.approval-admin-tab {
+  padding: 8px 16px;
+  font-size: 13px;
+  color: #666;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.15s;
+}
+
+.approval-admin-tab:hover {
+  color: #1a73e8;
+}
+
+.approval-admin-tab.active {
+  color: #1a73e8;
+  font-weight: 600;
+  border-bottom-color: #1a73e8;
+}
+
+.approval-admin-content {
+  padding: 8px 0;
+}
+
 .approval-admin-empty {
   color: #aaa;
   font-size: 13px;
