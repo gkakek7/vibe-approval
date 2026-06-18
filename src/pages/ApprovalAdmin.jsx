@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import FormManage from './admin/FormManage'
 import './ApprovalAdmin.css'
 
 const ADMIN_MENUS = [
@@ -28,9 +29,12 @@ export default function ApprovalAdmin() {
         ))}
       </div>
       <div className="approval-admin-content">
-        <p className="approval-admin-empty">
-          {ADMIN_MENUS.find((m) => m.id === activeTab)?.label} 항목이 없습니다.
-        </p>
+        {activeTab === 'form' && <FormManage />}
+        {activeTab !== 'form' && (
+          <p className="approval-admin-empty">
+            {ADMIN_MENUS.find((m) => m.id === activeTab)?.label} 항목이 없습니다.
+          </p>
+        )}
       </div>
     </div>
   )
